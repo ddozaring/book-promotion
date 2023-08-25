@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png"> Document</title>
+    <link href="https://unpkg.com/sanitize.css" rel="stylesheet"/> <!--브라우저 별로 css 초기화 -->
+    <link rel="stylesheet" href="result.css">
+</head>
+<body>
+    <header>
+        <h1 class="logo"></h1>
+        <nav class="nav">
+            <ul>
+                <li>
+                    <a href="#section1">메인이미지</a>
+                </li>
+                <li>
+                    <a href="#section2">책 소개</a>
+                </li>
+                <li>
+                    <a href="#section3">등장인물</a>
+                </li>
+                <li>
+                    <a href="#section4">책 속에서</a>
+                </li>
+                <li>
+                    <a href="#section5">작가소개</a>
+                </li>
+                <li>
+                    <a href="#section6">출판사 서평</a>
+                </li>
+                <li>
+                    <a href="#section7">구매자리뷰</a>
+                </li>
+                <li>
+                    <a href="#section8">구매링크</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section id="section1">
+        <div class="images_slide">
+            <div class="section1_text">
+                <div>
+                    <p>당신 거기<br> <!--원래 div하나만 있었음-->
+                    있어 줄래요?</p>
+                </div>   
+                <img class="book" src="./image/책.png" al t="책">
+            </div>
+            <img class="tree"  src="./image/나뭇가지right.png" alt="오른쪽 나뭇가지">
+            <!-- <img class="sea" src="../image/바다배경.png" alt="바다배경"> -->
+            <img class="tree2"  src="./image/나뭇가지left.png" alt="왼쪽 나뭇가지">
+            <!-- <img class="book" src="../image/책.png" alt="책"> -->
+            
+        </div>
+    </section>
+    
+    <section id="section2">
+        <img class="left_hand" src="./image/왼손.png" alt="왼손">
+    
+        <div class="section2_text">
+
+            <h1>"&#60;당신 거기 있어줄래요&#62; 기욤 뮈소 신작, 전 세계 동시 출간"</h1><br>
+
+            <p>&#60;구해줘&#62;, &#60;완전한 죽음&#62; 등의 작품으로 주목받아온 프랑스 작가 기욤 뮈소의 장편소설. <br>
+                과거로 돌아갈 수 있는 열 번의 기회를 얻게 된 한 남자의 이야기다. <br>
+                기욤 뮈소 소설의 두드러진 특징인 로맨스와 미스터리 장르의 결합, <br><br>
+            
+                영상미가 돋보이는 생생한 화면 구성, 빠른 전개가 유감없이 발휘되어 있다. <br>
+                주인공 엘리엇은 명망 있는 외과의사로 성공적인 삶을 열어왔지만 한 가지 떨쳐버릴 수 없는 회한이 있다. <br>
+                그것은 바로 사랑하는 연인을 사고로부터 구해내지 못한 것이다.</p>
+
+            <p>캄보디아에서 만난 신비의 노인으로부터 과거로 돌아갈 수 있는  <br>
+                열 개의 알약을 얻게 된 그는 30년 전으로 돌아갈 수 있는 기회를 부여잡는다. <br>
+                엘리엇은 우여곡절 끝에 연인을 살려내지만 그의 과거사에서 한 가지 사실이  <br>
+                뒤바뀌게 되면서 나비효과처럼 그의 삶 전체를 뒤죽박죽이 된 혼란 속으로 밀어 넣는다.  <br> <br>
+             
+                과거로 돌아간다면 가장 바로 잡고 싶었던 실수를 수정한 결과 다시 연쇄적으로 또 다른 문제가 무더기로 양산된 것. <br>
+                이야기는 1970년대 샌프란시스코를 중심으로, 현재와 과거, 현실과 초현실이 교차하며 전개된다.</p>
+        </div>
+        <img class="stone" src="./image/돌맹이.png" alt="돌맹이들">
+        <img class="right_hand" src="./image/오른손.png" alt="오른손">
+    </section>
+
+    <section id="section3">
+        <div class="section3_text">
+            <p>시간을 되돌릴 수 있다면 당신은 사랑을 인생을 어떻게 바꿀 것 인가? </p>
+            <h1>등장인물</h1>
+            </div>
+            <div class="container">
+                <input type="radio" name="slider" class="d-none" id="s1" checked>
+                <input type="radio" name="slider" class="d-none" id="s2">
+                <input type="radio" name="slider" class="d-none" id="s3">
+                <input type="radio" name="slider" class="d-none" id="s4">
+                <input type="radio" name="slider" class="d-none" id="s5">
+            
+                <div class="cards">
+                  <label for="s1" id="slide1">
+                    <div class="card">
+                      <div class="image">
+                        <img src="./image/주인공.png" alt="">
+                        <div class="dots">
+                          <div></div>
+                          <div></div>
+                          <div></div>
+                        </div>
+                      </div>
+                      <div class="infos">
+                        <span class="name">엘리엇과 일리나</span>
+                        <span class="lorem">서로 사랑하는 둘 사이에 무슨 일이 일어날까? 예측할 수 없는 이야기가 시작된다. </span>
+                      </div>
+                    </div>
+                  </label>
+            
+                  <label for="s2" id="slide2">
+                    <div class="card">
+                        <div class="image">
+                          <img src="./image/주인공 친구.png" alt="">
+                          <div class="dots">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                          </div>
+                        </div>
+                        <div class="infos">
+                          <span class="name">매트</span>
+                          <span class="lorem">주인공과 가장 친한 친구로서 중요한 사건에 자신도 휘말리게 된다.</span>
+                        </div>
+                      </div>
+                    </label>
+            
+                  <label for="s3" id="slide3">
+                    <div class="card">
+                        <div class="image">
+                          <img src="./image/할아버지.png" alt="">
+                          <div class="dots">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                          </div>
+                        </div>
+                        <div class="infos">
+                          <span class="name">노인</span>
+                          <span class="lorem">사건의 발단을 주는 인물로 주인공에게는 기회이자 위험이 찾아오기도 한다.</span>
+                        </div>
+                      </div>
+                    </label>
+            
+                  <label for="s4" id="slide4">
+                    <div class="card">
+                        <div class="image">
+                          <img src="./image/주인공 딸.png" alt="">
+                          <div class="dots">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                          </div>
+                        </div>
+                        <div class="infos">
+                          <span class="name">앤지</span>
+                          <span class="lorem">주인공 앨리엇이 사랑하는 딸로서 무엇과도 바꿀 수 없다고 생각하는 인물이다.</span>
+                        </div>
+                      </div>
+                    </label>
+            
+                  <label for="s5" id="slide5">
+                    <div class="card">
+                        <div class="image">
+                          <img src="./image/딸 엄마.png" alt="">
+                          <div class="dots">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                          </div>
+                        </div>
+                        <div class="infos">
+                          <span class="name">이탈리아 의사</span>
+                          <span class="lorem">주인공이 이탈리아에서 만난 옛 연인이며 앤지의 엄마이기도 하다.</span>
+                        </div>
+                      </div>
+                    </label>
+                </div>
+              </div>
+    </section>
+
+    <section id="section4">
+      <div class="section4_box">
+        <div class="section4_container">
+            <div class="section4_text">
+                <h2>책 속에서</h2>
+                    <p>
+                    P. 13~14
+                    노인이 의사에게 물었다. “간절히 바라는 소원이 있습니까?”
+                    의사는 질문의 뜻을 제대로 파악하지 못해 되물었다.
+                    “무슨 뜻이죠?”“반드시 이루고 싶은 소원이 있는지 물었습니다.
+                    ”극심한 피로감 탓인 듯 갑자기 감상에 젖은 의사는 차분하게 대답했다.
+                    “꼭 한 번 만나고 싶은 여인이 있습니다.” 
+                    </p>
+
+                    <p>
+                    “여인이라면?”“내게는 이 세상 그 무엇보다 소중했던 단 하나의 여인이죠.
+                    ”그 순간 문명세계와는 동떨어진 곳에서 서로 얼굴을 마주하고 있는 
+                    두 사람 사이로 엄숙하고 신비로운 기운이 흘렀다.
+                    노인이 궁금한 표정을 지으며 물었다. “그 여인은 지금 어디에 있는데요?"
+                    “30년 전 사고로 목숨을 잃었습니다.
+                    </p>
+
+                    <p>
+                    ”노인이 살짝 미간을 찌푸리더니 잠시 생각에 빠져들었다.
+                    한동안 말이 없던 노인은 자리에서 일어나 방으로 걸어갔다. 
+                    선반 대용으로 쓰는 판자 위에 말린 해마, 인삼, 포르말린에 담긴 독사 따위가 어지럽게 늘어서 있었다.
+                    한참 동안 선반을 뒤지던 노인이 자그마한 병 하나를 찾아내 손에 들었다.
+                    노인이 의사에게 다가와 병을 건넸다. 병에는 황금색 알약 열 개가 들어있었다.
+                    </p>
+            </div>
+                    <img src="./image/섹션4 책.png" alt="">     
+        </div>
+    </div>
+    </section>
+
+
+    <section id="section5">
+
+        <div class="section5_box1">
+        <img src="./image/작가.png" alt="기욤뮈소 작가">
+        <div class="section5_text1">
+            <h2>기욤뮈소 작가 (Guillaume Musso)</h2>
+            <p>빠른 사건 전개와 생동감 있는 화면 구성, 마치 한 편의 영화를 보는 듯한 감각적인 요소들로 독자들을 매혹시키는 
+                이 시대 프랑스 문단을 대표하는 작가.1974년 프랑스 앙티브에서 태어나 니스대학에서 경제학을 공부했고, 
+                몽펠리에대학원 경제학과에서 석사 과정을 이수한 후 국제고등학교 교사로 재직하며 집필 활동을 시작했다.
+                첫 소설 『스키다마링크』에 이어 2004년 두 번째 소설 『그 후에』를 출간하며 프랑스 문단에 일대 센세이션을불러일으켰고,
+                『그 후에』부터 『인생은 소설이다』까지 17권의 소설 모두가 프랑스 베스트셀러 1위를 기록했다. 매년 『르 피가로』지와 &#60;프랑스서점연합회&#62;에서
+                조사하는 베스트셀러 작가 순위에서도 8년 연속 1위에 올랐다.
+                세 번째 소설 『구해줘』는 아마존 프랑스 85주 연속 베스트셀러 1위를 기록했고, 국내에서도 무려 200주 이상 베스트셀러에 등재되었다.</p>
+                
+                <button class="button1">저자 파일</button>
+                <button class="button2">신간 알리미</button>
+                <!-- <input class="button1" type="submit" value="저자 파일"> 
+                <input class="button2" type="submit" value="신간 알리미"> -->
+        </div>
+        </div>
+        
+        <div class="section5_box2">
+        
+        <div class="section5_text2">
+            <h2>전미연 옮김 (번역)</h2>
+            <p>서울대학교 불어불문학과와 한국외국어대학교 통번역대학원 한불과를 졸업했다. 파리 제3대학 통번역대학원(ESIT)
+                 번역 과정과 오타와 통번역대학원(STI) 번역학 박사 과정을 마쳤다. 한국외국어대학교 통번역대학원 겸임교수를 지냈으며 현재 전문 번역가로 활동 중이다.
+                 옮긴 책으로는 기욤 뮈소의 《당신, 거기 있어줄래요?》, 《사랑하기 때문에》, 《그 후에》, 《천사의 부름》,
+                 《종이 여자》, 베르나르 베르베르의 《상대적이며 절대적인 지식의 백과사전》(공역), 《문명》, 《심판》, 《기억》,
+                 《죽음》, 《고양이》, 《잠》, 《제3인류》(공역), 《파피용》, 《만화 타나토노트》,
+                 엠마뉘엘 카레르의 《리모노프》, 《나 아닌 다른 삶》, 《콧수염》, 《겨울 아이》, 카롤 마르티네즈의 《꿰맨 심장》,
+                  아멜리 노통브의 《두려움과 떨림》, 《배고픔의 자서전》, 《이토록 아름다운 세 살》, 발렝탕 뮈소의 《완벽한 계획》, 다비드 카라의 《새벽의 흔적》,
+                 로맹 사르두의 《최후의 알리바이》, 《크리스마스 1초 전》, 《크리스마스를 구해줘》, 알렉스 제니 외의 《22세기 세계》(공역) 등이 있다.
+                 &#60;작은 철학자 시리즈&#62; 를 비롯한 어린이 책도 여러 권 번역했다.</p>
+
+                  <button class="button2-1">저자 파일</button>
+                  <button class="button2-2">신간 알리미</button>
+                  <!-- <input class="button2-1" type="submit" value="저자 파일"> 
+                  <input class="button2-2" type="submit" value="신간 알리미"> -->
+        </div>
+        <img src="./image/옮긴이.png" alt="전미연 옮긴이">
+        </div>
+
+    </section>
+
+
+    <section id="section6">
+
+        <img class="umb" src="./image/image 367.png" alt="">
+        <div class="section6_text">
+            <h1>출판사 서평</h1>
+            <p>
+
+            〈도서출판 밝은세상〉은 지난 15년 동안 달라진 맞춤법에 따라 일부 어휘를 수정하는 한편 등장인물들이 시대에 맞지 않는 대화체를 사용하는 부분이 더러 있어 새로운 교정 작업을 거쳐 개정판을 발행하게 되었다.
+            
+            《당신, 거기 있어줄래요?》는 2015년에 홍지영 감독, 김윤석, 변요한 주연의 국내영화로 제작되어 다시 한번 큰 화제를 불러 모으며 크게 주목받았다. 기욤 뮈소는 매년 《르 피가로》지와 〈프랑스서점연합회〉에서 조사하는 베스트셀러 작가 순위에서도 8년 연속 1위를 기록했다. 
+            2018년 작 《아가씨와 밤》은 《FR2》 방송에서 6부작 드라마로 제작돼 방영되었고, 그 외 다수의 소설이 영화와 드라마로 제작되었다. 그의 소설은 현재 전 세계 45개국에서 출간돼 독자들로부터 폭넓은 공감과 지지를 이끌어내고 있다.
+            
+             이 소설은 우리가 인생에서 이룰 수 없었던 미망, 눈물을 머금고 운명으로 받아들일 수밖에 없었던 회한에 대해 깊이 성찰해볼 수 있는 기회를 부여한다.
+            </p><br><br>
+            <p> 
+            누구나 마음속으로 타임머신을 타고 과거의 어느 지점으로 시간여행을 떠나 인생의 치명적인 실수를 바로잡고 싶다는 생각을 품어본 적 있을 것이다.이 소설의 주인공 엘리엇은 지난 30년 동안 어느 누구보다 성실한 자세로 성공적인 인생을 열어왔지만 평생 떨쳐버리지 못한 회한이 있다. 그의 간절한 소망이 있다면 30년 전 사고로 숨진 연인 일리나를 다시 한번 만나보는 것이다.
+            
+             캄보디아에 의료봉사를 나가 아이의 병을 고쳐주고 신비한 노인으로부터 황금빛 알약 10개가 들어있는 병을 선물로 받은 엘리엇은 30년 전 과거로 돌아가 운명을 바꿀 시간여행의 기회를 부여잡는다. 독자들은 이 소설을 펼치는 순간 엘리엇과 함께 아슬아슬하고 신비한 시간여행을 떠나게 된다.과거로 돌아갈 기회가 주어진 엘리엇은 사랑과 인생을 어떻게 바꾸어갈까? 시간의 장벽을 통과할 수 있는 기회를 부여받은 엘리엇에게는 어떤 고난이 밀어닥치게 될까?30년 전으로 돌아간 엘리엇은 우여곡절 끝에 일리나를 살려내지만 
+            자신의 인생과 밀접하게 얽혀있는 과거의 사실 한 가지가 달라지면서 나비효과처럼 수습하기 힘든 혼란이 초래된다.</p>
+        </div>
+        </section>
+
+
+    <section id="section7">
+        <h1>리뷰를 확인해보세요</h1>
+<div class="tab_container">
+  <div class="tabs">
+    <ul>
+      <li class="active"><a href="#" rel="tab1">전체 리뷰</a></li>
+      <li><a href="#" rel="tab2">구매자 리뷰</a></li>
+      <li><a href="#" rel="tab3">블로그 리뷰</a></li>
+    </ul>
+  </div>
+  <!-- tab1 시작 -->
+  <div id="tab1" class="tab_content">
+    <section class="review_box">
+        <article>
+        <div class="section7_text">
+            <div>구매자 리뷰</div> <div>cj******* | 2023.07.19 | <a href="#">신고/차단</a></div>
+            <div>
+                정말 재미있게 봤습니다. 다른 사람들에게 추천해주려고요!
+            </div>
+        </div>
+        <div class="section7_text">
+            <div >구매자 리뷰</div> <div>sj******* | 2023.07.13 | <a href="#">신고/차단</a></div>
+            <div>
+                내용이 너무 슬프지만 재미있네요~
+            </div>
+        </div>
+        <div class="section7_text">
+            <div >블로그 리뷰</div> <div>ta******* | 2023.07.11 | <a href="#">신고/차단</a></div>
+            <div>
+                <a href="">이 작가의 책은 항상 끝을 궁금하게 해서 몰입하기 너무 좋아요.
+                혹시나 책을 잘 읽지 못하는 분들 한테도 추천드려도 좋을거 같아요.</a>
+            </div>
+        </div>
+        <div class="section7_text">
+            <div >구매자 리뷰</div> <div>jj******* | 2023.07.03 | <a href="#">신고/차단</a></div>
+            <div>
+                다 읽고 나니 책 표지 마저도 한번 더 와 닿는 그런 작품이에요.
+                기욤 뮈소 작가의 책은 처음인데 첫 책으로 선택을 잘했단 생각이 듭니다.
+            </div>
+        </div>
+        <div class="section7_text">
+            <div >구매자 리뷰</div> <div>dj******* | 2023.06.26 | <a href="#">신고/차단</a></div>
+            <div>
+                이 작가의 다른 소설도 너무나 궁금하네요~
+            </div>
+        </div>
+        </article>
+            <!-- 여기서 부터 오른쪽 댓글 -->
+
+        <article>
+            <div class="section7_text">
+                <div >구매자 리뷰</div> <div>12******* | 2023.06.23 | <a href="#">신고/차단</a></div>
+                <div>
+                    생각보다 재밌네요 볼수록 다음 내용이 궁금해서 한 번에 다 읽었습니다.
+                </div>
+            </div>
+            <div class="section7_text">
+                <div >구매자 리뷰</div> <div>sa******* | 2023.06.19 | <a href="#">신고/차단</a></div>
+                <div>
+                    이런 류의 소설을 좋아해서 재미있게 봤습니다.
+                </div>
+            </div>
+            <div class="section7_text">
+                <div>블로그 리뷰</div> <div>da******* | 2023.06.18 | <a href="#">신고/차단</a></div>
+                <div>
+                    <a href="#">
+                    무난한 로맨스 코미디 좋아하시는 분들이나 타임트립에 대한 내용을
+                    좋아하시는 분들에게 추천드립니다.
+                    </a>
+                </div>
+            </div>
+            <div class="section7_text">
+                <div>블로그 리뷰</div> <div>la******* | 2023.06.13 | <a href="#">신고/차단</a></div>
+                <div>
+                    <a href="">
+                    기욤뮈소의 작품은 언제나 옳은것 같습니다. 커플 분들이 같이 읽어보시면 더욱 더 좋을 것 같습니다..
+                    </a>
+                </div>
+            </div>
+            <div class="section7_text">
+                <div >구매자 리뷰</div> <div>tp******* | 2023.06.10 | <a href="#">신고/차단</a></div>
+                <div>
+                    영화를 먼저 접하고 재미있어서 원작이 책이라서 궁금해서 구매해봤습니다~
+                </div>
+        </div>
+        </article>     
+    </section>
+  </div>
+
+  <!-- tab2 시작 -->
+  <div id="tab2" class="tab_content">
+    <section class="review_box">
+        <article>
+            <div class="section7_text">
+                <div>구매자 리뷰</div> <div>cj******* | 2023.07.19 | <a href="#">신고/차단</a></div>
+                <div>
+                    정말 재미있게 봤습니다. 다른 사람들에게 추천해주려고요!
+                </div>
+            </div>
+            <div class="section7_text">
+                <div >구매자 리뷰</div> <div>sj******* | 2023.07.13 | <a href="#">신고/차단</a></div>
+                <div>
+                    내용이 너무 슬프지만 재미있네요~
+                </div>
+            </div>
+            <div class="section7_text">
+                <div >구매자 리뷰</div> <div>jj******* | 2023.07.03 | <a href="#">신고/차단</a></div>
+                <div>
+                    다 읽고 나니 책 표지 마저도 한번 더 와 닿는 그런 작품이에요.
+                    기욤 뮈소 작가의 책은 처음인데 첫 책으로 선택을 잘했단 생각이 듭니다.
+                </div>
+            </div>
+            <div class="section7_text">
+                <div >구매자 리뷰</div> <div>dj******* | 2023.06.26 | <a href="#">신고/차단</a></div>
+                <div>
+                    이 작가의 다른 소설도 너무나 궁금하네요~
+                </div>
+            </div>
+            <div class="section7_text">
+                <div >구매자 리뷰</div> <div>12******* | 2023.06.23 | <a href="#">신고/차단</a></div>
+                <div>
+                    생각보다 재밌네요 볼수록 다음 내용이 궁금해서 한 번에 다 읽었습니다.
+                </div>
+            </div>
+            </article>
+            <!-- 여기서 부터 오른쪽 리뷰 -->
+            <article>
+                <div class="section7_text">
+                    <div >구매자 리뷰</div> <div>12******* | 2023.06.22 | <a href="#">신고/차단</a></div>
+                    <div>
+                        보다가 너무 좋아서 여자친구한테도 선물해줬습니다.
+                    </div>
+                </div>
+                <div class="section7_text">
+                    <div >구매자 리뷰</div> <div>sa******* | 2023.06.19 | <a href="#">신고/차단</a></div>
+                    <div>
+                        기욤뮈소라는 작가를 몇번 들은 적은 있는데 책을 읽어보는것 은 처음입니다.
+                        무엇인가 끌어당기는 느낌으로 정말 재밌게 보았습니다.
+                    </div>
+                </div>
+                
+                <div class="section7_text">
+                    <div >구매자 리뷰</div> <div>tp******* | 2023.06.10 | <a href="#">신고/차단</a></div>
+                    <div>
+                        영화를 먼저 접하고 재미있어서 원작이 책이라서 궁금해서 구매해봤습니다~
+                    </div>
+            </div>
+
+            <div class="section7_text">
+                <div>구매자 리뷰</div> <div>65******* | 2023.06.09 | <a href="#">신고/차단</a></div>
+                <div>
+                    내용은 보지않고 사실 표지가 너무 이뻐서 구매했는데 장식용으로는 내용이 너무 아깝네요.
+                    재밌게 봤습니다~
+                </div>
+            </div>
+            <div class="section7_text">
+                <div>구매자 리뷰</div> <div>la******* | 2023.06.03 | <a href="#">신고/차단</a></div>
+                <div>
+                    너무 감동적이여서 남편한테 읽어보라고해야겠네요~
+                </div>
+            </div>
+            </article>     
+        </section>          
+  </div>
+  
+  <!-- tab3 시작 -->
+  <div id="tab3" class="tab_content">
+    <section class="review_box">
+        <article>
+            <div class="section7_text">
+                <div >블로그 리뷰</div> <div>ta******* | 2023.07.11 | <a href="#">신고/차단</a></div>
+                <div>
+                    <a href="">이 작가의 책은 항상 끝을 궁금하게 해서 몰입하기 너무 좋아요.
+                    혹시나 책을 잘 읽지 못하는 분들 한테도 추천드려도 좋을거 같아요.</a>
+                </div>
+            </div>
+            <div class="section7_text">
+                <div>블로그 리뷰</div> <div>da******* | 2023.06.18 | <a href="#">신고/차단</a></div>
+                <div>
+                    <a href="#">
+                    무난한 로맨스 코미디 좋아하시는 분들이나 타임트립에 대한 내용을
+                    좋아하시는 분들에게 추천드립니다.
+                    </a>
+                </div>
+            </div>
+            <div class="section7_text">
+                <div>블로그 리뷰</div> <div>la******* | 2023.06.13 | <a href="#">신고/차단</a></div>
+                <div>
+                    <a href="#">
+                    기욤뮈소의 작품은 언제나 옳은것 같습니다. 커플 분들이 같이 읽어보시면 더욱 더 좋을 것 같습니다..
+                    </a>
+                </div>
+            </div>
+            <div class="section7_text">
+                <div>블로그 리뷰</div> <div>la******* | 2023.06.06 | <a href="#">신고/차단</a></div>
+                <div>
+                    <a href="#">이쁜 사랑을 제대로 표현했다고 밖에 말을 할 수 없을 것 같아요.</a>
+                </div>
+            </div>
+            <div class="section7_text">
+                <div>블로그 리뷰</div> <div>la******* | 2023.06.03 | <a href="#">신고/차단</a></div>
+                <div>
+                    <a href="">이번 계기를 통해 기욤뮈소의 책을 정말로 사랑할 수 밖에 없게 되었다.</a>
+                </div>
+            </div>
+            </article>
+            <!-- 여기서 부터 오른쪽 리뷰 -->
+            <article>
+            <div class="section7_text">
+                <div >블로그 리뷰</div> <div>ta******* | 2023.07.11 | <a href="#">신고/차단</a></div>
+                <div>
+                    <a href="">이 작가의 책은 항상 끝을 궁금하게 해서 몰입하기 너무 좋아요.
+                    혹시나 책을 잘 읽지 못하는 분들 한테도 추천드려도 좋을거 같아요.</a>
+                </div>
+            </div>
+            <div class="section7_text">
+                <div>블로그 리뷰</div> <div>da******* | 2023.06.18 | <a href="#">신고/차단</a></div>
+                <div>
+                    <a href="#">
+                    무난한 로맨스 코미디 좋아하시는 분들이나 타임트립에 대한 내용을
+                    좋아하시는 분들에게 추천드립니다.
+                    </a>
+                </div>
+            </div>
+            <div class="section7_text">
+                <div>블로그 리뷰</div> <div>la******* | 2023.06.13 | <a href="#">신고/차단</a></div>
+                <div>
+                    <a href="#">
+                    기욤뮈소의 작품은 언제나 옳은것 같습니다. 커플 분들이 같이 읽어보시면 더욱 더 좋을 것 같습니다..
+                    </a>
+                </div>
+            </div>
+            <div class="section7_text">
+                <div>블로그 리뷰</div> <div>la******* | 2023.06.06 | <a href="#">신고/차단</a></div>
+                <div>
+                    <a href="#">
+                        이쁜 사랑을 제대로 표현했다고 밖에 말을 할 수 없을 것 같아요.
+                    </a>
+                </div>
+            </div>
+            <div class="section7_text">
+                <div>블로그 리뷰</div> <div>la******* | 2023.06.03 | <a href="#">신고/차단</a></div>
+                <div>
+                    <a href="#">
+                        이번 계기를 통해 기욤뮈소의 책을 정말로 사랑할 수 밖에 없게 되었다.
+                    </a>
+                </div>
+            </div>
+            </article>     
+        </section>
+  </div>
+  </div>
+        <img class="whale" src="./image/고래.png" alt="핑크고래">
+        
+    </section>
+  
+
+
+    <section id="section8">
+        <div class="section8_box">
+            <div class="section8_img">
+                <img class="water" src="./image/섹션8 물감.png" alt="">
+            </div>
+            <div class="book8">
+                <img src="./image/책.png" alt="마지막 책"> 
+                <div class="section8_text">
+                    <h2>당신 거기 있어줄래요?</h2>
+                    <p>기욤뮈소저 ｜ 밝은세상</p>
+                    <button class="button8"><a href="https://product.kyobobook.co.kr/detail/S000001310215" target="_blank">구매하기</a></button>
+                </div>
+
+ 
+            </div>
+           
+            <!-- 글자와 책, 물감 사이를 넓히고 싶음 -->
+            <!-- 네브메뉴 픽스드 하고 섹션1부터 네브만큼 내리기 -->
+            <!-- vh150를 사용해도 상관없는지-->
+            <!-- 모든 텍스트 박스에다가 오버플로우 히든을 줘야하는가? -->
+        </div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="./result.js">
+</script>
+</body>
+</html>

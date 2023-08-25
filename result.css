@@ -1,0 +1,850 @@
+
+          /*공통 css*/
+  @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Noto+Serif+KR:wght@300&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Nanum+Gothic&family=Noto+Serif+KR:wght@300&display=swap');
+  
+  :root {
+     --pink: #FFF4F0;
+     --pink2: #FAD6CA;
+     --green: #90BBB5;
+     --text1: #3A3A30;
+     --text2: #0F4F35;
+     --font1: 'Noto Serif KR', serif;
+     --font2: 'Nanum Gothic', sans-serif;
+     --tmenu: #c6dbd8;
+ }        
+ *{margin: 0; padding: 0;}
+ li{list-style-type: none;}
+ 
+ a{
+     text-decoration: none;
+     color: var(--text2);
+ }
+
+ /* 메뉴 css */
+ header{
+     position: fixed;
+     width: 100%;
+     height: 3.75rem;
+     display: flex;
+     opacity: 0.8;
+     z-index: 2000;
+ }
+ header .logo{
+     width: 20%;
+     background-color: var(--pink);
+ }
+ header .nav{ 
+     width: 80%;
+     background-color: var(--pink);
+    
+ }
+ .nav ul{
+     display: flex;  /*네브메뉴 상하 중앙정렬 하고싶음*/
+     justify-content: space-evenly;
+     font-weight: 600;
+     margin-top: 30px;
+ }
+ /* 메뉴 css 끝 */
+ /* 섹션 1시작 */
+ #section1 {
+     width: 100vw;
+     height: 100vh;
+     background: url("./image/바다배경.png");
+     background-size: cover;
+     background-position: center center;
+ }
+ .section1_text{ /* 책이랑 제목이랑 묶여있음 */
+     font-family: var(--font1);
+     color: var(--text2);
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     font-size: 7.5rem;
+     margin-top: 8rem;
+ }
+ /* .section1_text{
+     font-size: 7.5rem;
+     position: absolute;
+     top: 200px;
+     left: 150px;
+     z-index: 3;
+ } */
+
+ 
+
+ .sea {
+ position: relative; /* 추가 */
+ z-index: 1; /* 추가 */
+ background-size: cover;
+ width: 100%;
+ height: 100%;
+ }
+ .tree, .tree2, .book {
+  z-index: 2; /* 추가 */
+ /* 나머지 스타일 동일 */
+ } 
+ .tree{
+     position: absolute;
+     width: 600px;
+     height: 600px;
+     top: 0;
+     left: -230px;
+     animation: floatAnimation 3s infinite alternate;
+ }
+ .tree2{
+     position: absolute;
+     width: 600px;
+     height: 600px;
+     top: 400px;
+     right: -200px;
+     animation: floatAnimation2 3s infinite alternate;
+ }
+ /* .book{
+     position: absolute;
+     top: 100px;
+     right: 100px;
+ } */
+ .images_slide{
+     width: 100vw;
+     height: 100vh;
+     overflow: hidden;
+     z-index: 10;
+     box-shadow: 0 0 0 10 #111111;
+     z-index: 1; /* 추가 */
+     position: relative; /* 추가 */
+ }
+
+ @keyframes floatAnimation {
+0% { transform: rotate(0); }
+25% { transform:  rotate(5deg); }
+50% { transform: rotate(10deg); }
+75% { transform: rotate(5deg);}
+100% { transform: rotate(0); }
+}
+
+@keyframes floatAnimation2 {
+0% { transform: translateX(0); }
+50% { transform: translateX(-20px); }
+100% { transform: translateX(0); }
+}
+/*section1*/
+
+
+/*섹션2 시작*/
+#section2{
+position: relative;
+width: 100vw;
+height: 50rem; /*100vh*/
+background-color: var(--pink);
+}
+
+/*섹션2 부유요소*/
+.left_hand{
+position: absolute;
+width: 400px;
+top: 500px;
+left: 0;
+}
+.stone {
+position: absolute;
+width: 350px;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%); /*강제 중앙정렬*/
+z-index: 0;
+mix-blend-mode: multiply; /*스톤을 뒤로 보이게*/
+
+}
+.right_hand{
+position: absolute;
+width: 25rem;
+top: 12.5rem;
+right: 0;
+}
+/* .title2{
+position: absolute;
+font-family: 'Noto Serif KR', serif;
+top: 50%;
+margin-left: 50%;
+transform: translate(-50%, -50%);
+z-index: 100;
+top: 80px;
+} */
+
+.section2_text{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+font-family: var(--font1);
+color: var(--text2);
+}
+.section2_text > h1{
+
+padding-bottom: 4rem;
+margin-top: 10rem;
+margin-bottom: 0.625rem;
+}
+.section2_text > p{
+text-align: center;
+line-height: 1.8rem;
+}
+
+/*section2*/
+
+/* section3 시작*/
+#section3{
+position: relative;
+width: 100vw;
+height: 80rem; /*120vh*/ 
+background-image: linear-gradient(var(--pink), var(--pink2));
+}
+
+.section3_text{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+font-family: var(--font1); 
+color: var(--text2);
+text-align: center;
+margin-bottom: 4rem;
+}
+.section3_text > div  > p{
+padding-bottom: 1.6rem;
+}
+.section3_text > div  > p > h1{
+margin-bottom: 2rem;
+}
+
+.slider {
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+}
+
+.slide-container {
+    display: flex;
+    animation: slide 7.5s infinite; /* 3개 이미지 x 2.5초 = 7.5초 */
+}
+
+.slide {
+    min-width: 100vw;
+}
+
+.nav-dots {
+    position: absolute;
+    bottom: 1.25rem;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dot {
+    width: 0.625rem;
+    height: 0.625rem;
+    border-radius: 50rem;
+    background: #ccc;
+    margin: 0 0.3125rem;
+    cursor: pointer;
+}
+
+.dot.active {
+    background: #000;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    33% {
+        transform: translateX(-100%);
+    }
+    66% {
+        transform: translateX(-200%);
+    }
+    100% {
+        transform: translateX(-300%);
+    }
+}
+/* ... */
+
+/*섹션 3*/
+
+#section3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  /* 화면 높이 전체를 차지하도록 설정 */
+    padding: 0 2rem;
+    text-align: center;
+}
+
+
+#section3 input {
+    display: none;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    max-width: 37.5rem;
+    max-height: 37.5rem;
+    display: flex;
+    transform-style: preserve-3d;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20rem;
+}
+
+.cards {
+    position: relative;
+    height: 40rem;
+    width: 40rem;
+    margin-bottom: 1.25rem;
+    perspective: 62.5rem;
+    border-radius: 40rem; /*레디우스를 줘도 안들어감*/
+    transform-style: preserve-3d;
+}
+
+.cards label {
+    position: absolute;
+    width: 40rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    cursor: pointer;
+    transition: transform 0.55s ease;
+}
+
+.cards .card{
+    position: relative;
+    height: 100%;
+    background-color: #92ccb7;
+    border-radius: 4rem; /*밑에 체크드 슬라이드 까지 건드려야 그림자까지 같이 변경*/
+    padding: 1.875rem 2.1875rem;
+}
+
+.card .image{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card .image img{
+    border-radius: 0.3125rem;
+    box-shadow: 0.9375rem 0.9375rem 2.5rem rgba(0, 0, 0, 50%);
+    margin-top: 1.4375rem;
+    width: 86%;
+    height: 464px;
+    /* object-fit: cover; */
+    background-size: cover;
+    background-position: center center;
+}
+
+.card .image .dots{
+    text-align: center;
+}
+
+.dots div{
+    width: 0.625rem;
+    height: 0.625rem;
+    border-radius: 50%;
+    margin-bottom: 0.625rem;
+}
+
+.dots div:nth-child(1){
+    background-color: var(--current-color1);
+}
+
+.dots div:nth-child(2){
+    background-color: #5B85F9;
+}
+
+.dots div:nth-child(3){
+    background-color: #000;
+}
+
+.card .infos{
+    display: block;
+    padding-top: 3.75rem;
+}
+/*이미지가 왜 안맞는지*/
+.infos span{
+    display: block;
+}
+
+.infos .name{
+    text-align: end;
+
+    font-family: var(--font2);
+    font-size: 1.875rem;
+    color: var(--current-color1);
+    letter-spacing: 0.5rem;
+    margin-bottom: 1.25rem;
+    padding-left: 25%;
+    transition: all .6s ease;
+}
+
+.infos .lorem{
+    text-align: start;
+    font-family: var(--font2);
+    font-size: 0.9688rem;
+    color: #ECEAED;
+    letter-spacing: 0.1875rem;
+}
+
+ /* .card .btn-contact{
+    width: 100%;
+    height: 60px;
+    margin: 2.1875rem auto;
+    border-radius: 4rem;
+    background-color: var(--current-color1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1.5625rem;
+    letter-spacing: 0.625rem;
+    font-weight: 700;
+    transition: all .7s ease;
+}  */
+
+#s1:checked~.cards #slide4,
+#s2:checked~.cards #slide5,
+#s3:checked~.cards #slide1,
+#s4:checked~.cards #slide2,
+#s5:checked~.cards #slide3 {
+    box-shadow: 0 0.9375rem 2.1875rem 0 rgba(0, 0, 0, 45%);
+    border-radius: 4rem;
+    transform: translate3d(-70%, 0, -220px);
+    --current-color1: #ECEAED;
+    --current-color2: #72d3b0;
+}
+
+#s1:checked~.cards #slide5,
+#s2:checked~.cards #slide1,
+#s3:checked~.cards #slide2,
+#s4:checked~.cards #slide3,
+#s5:checked~.cards #slide4 {
+    box-shadow: 0 1.25rem 2.5rem 0 rgba(0, 0, 0, 45%);
+    border-radius: 4rem;
+    transform: translate3d(-35%, 0, -120px);
+    --current-color1: #ECEAED;
+    --current-color2: #72d3b0;
+}
+
+#s1:checked~.cards #slide1,
+#s2:checked~.cards #slide2,
+#s3:checked~.cards #slide3,
+#s4:checked~.cards #slide4,
+#s5:checked~.cards #slide5 {
+    box-shadow: 0 1.5625rem 3.125rem 0 rgba(0, 0, 0, 50%);
+    border-radius: 4rem;
+    transform: translate3d(0, 0, 0);
+    --current-color1: #fad00c;
+    --current-color2: #ECEAED;
+}
+
+#s1:checked~.cards #slide2,
+#s2:checked~.cards #slide3,
+#s3:checked~.cards #slide4,
+#s4:checked~.cards #slide5,
+#s5:checked~.cards #slide1 {
+    box-shadow: 0 1.25rem 2.5rem 0 rgba(0, 0, 0, 45%);
+    border-radius: 4rem;
+    transform: translate3d(35%, 0, -120px);
+    --current-color1: #ECEAED;
+    --current-color2: #72d3b0;
+}
+
+#s1:checked~.cards #slide3,
+#s2:checked~.cards #slide4,
+#s3:checked~.cards #slide5,
+#s4:checked~.cards #slide1,
+#s5:checked~.cards #slide2 {
+    box-shadow: 0 0.9375rem 2.1875rem 0 rgba(0, 0, 0, 45%);
+    border-radius: 4rem;
+    transform: translate3d(70%, 0, -220px);
+    --current-color1: #ECEAED;
+    --current-color2: #72d3b0;
+}
+
+
+
+/*section4 시작*/
+#section4{
+width: 100vw;
+height: 100vh; 
+background-color: var(--pink2);
+}
+.section4_box{
+    align-items: center;
+}
+#section4 .section4_container{ /*텍스트랑 책이미지가 같이있음*/
+width: 80vw;
+height: 80vh;
+padding: 2rem 4rem;
+display: flex;
+justify-content: space-around;
+margin: 0 auto;
+background: url(../image/뒷바다\ 배경.png);
+background-size: cover;
+background-position: center center;
+border-radius: 4rem;
+}
+.section4_container .section4_text{
+width: 32vw;
+padding: 4rem;
+display: flex;
+flex-direction: column;
+font-family: var(--font1);
+overflow: hidden;
+}
+.section4_text > h2{
+margin-bottom: 4rem;
+}
+
+.section4_text > p{
+line-height: 1.8rem;
+margin-bottom: 2rem;
+}
+.section4_container > img{
+    cursor: pointer;
+}
+.section4_container > img:hover{
+    transition: 3s;
+    transform: rotate(15deg);
+}
+
+/* section4 끝 */
+
+
+#section5{
+    width: 100vw;
+    height: 100rem; /*150vh*/
+    background: linear-gradient(var(--pink2), var(--pink));
+    font-family: var(--font2);
+    }
+
+/* section5_1 */
+#section5 .section5_box1{
+    width: 80vw;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding-bottom: 8rem;
+    padding-top: 8rem;
+}
+.section5_box1 > img{
+    width: 30%;
+    border-radius: 8rem;
+
+}
+#section5 .section5_text1{
+    width: 50%;
+}
+.section5_text1 > h2{
+    padding-bottom: 1rem;
+    border-bottom: 0.25rem solid black;
+}
+
+.section5_text1 > p{
+    padding-top: 3rem;
+    line-height: 1.8rem;
+}
+.section5_text1 > .button1{
+    margin-right: 4rem;
+}
+
+.section5_text1 > .button1,.button2{
+    width: 8rem;
+    height: 2rem;
+    margin-top: 2rem;
+    background-color: var(--pink);
+    border: none;
+    border-radius: 4rem;
+    cursor: pointer;
+}
+
+.section5_text1 > .button1:hover ,.button2:hover{
+    background-color: var(--pink);
+    border: 0.125rem solid grey;
+    color: steelblue
+}
+
+/* section5_2 */
+#section5 .section5_box2{
+    width: 80vw;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+.section5_box2 > img{
+    width: 30%;
+    border-radius: 8rem;
+}
+#section5 .section5_text2{
+    width: 50%;
+}
+.section5_text2 > h2{
+    padding-bottom: 1rem;
+    border-bottom: 0.25rem solid black;
+}
+
+.section5_text2 > p{
+    padding-top: 3rem;
+    line-height: 1.8rem;
+}
+.section5_text2 > .button2-1{
+    margin-right: 4rem;
+}
+
+.section5_text2 > .button2-1, .button2-2{
+    width: 8rem;
+    height: 2rem;
+    margin-top: 2rem;
+    background-color: var(--pink2);
+    border: none;
+    border-radius: 4rem;
+    cursor: pointer;
+}
+.section5_text2 > .button2-1:hover, .button2-2:hover{
+    background-color: var(--pink2);
+    border: 0.125rem solid grey;
+    color: steelblue
+}
+/* section5 끝 */
+
+
+/* section6 시작*/
+#section6{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../image/watercolor-4117017_1920.png);
+    background-color: var(--pink); 
+    font-family: var(--font1);
+}
+
+#section6 .umb{
+    position: absolute;
+    width: 20rem;
+    bottom: 10rem;
+    left: 10rem;
+    mix-blend-mode: multiply;
+}
+#section6 > .section6_text{
+    color: var(--text2);
+    width: 50vw;
+    margin: 0 auto;
+}
+.section6_text > h1{
+    padding-bottom: 3rem;
+
+}
+.section6_text > p{
+    line-height: 2rem;
+}
+
+/* section6 끝*/
+
+
+/* section7 시작*/
+#section7{
+    position: relative;
+    width: 100vw;
+    height: 80rem; 
+    background-image: linear-gradient(var(--pink), var(--pink2));
+}
+#section7 > h1 {
+    padding: 6rem 2rem 0 0;
+    font-family: var(--font1);
+    text-align: center;
+    color: var(--text2);
+    z-index: 800;
+  }
+  
+  /* 탭 레이아웃 */
+  .tab_container {
+    position: absolute;
+    width: 60vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+  }
+  
+  .tab_container .tab_content {
+    width: 100%;
+    padding: 1.875rem 0;
+    background-color: var(--tmenu);
+    box-shadow:  0.8rem 0.8rem 0.8rem #8d8d8d;
+  }
+  
+  .tabs ul {
+    width: 50%;
+    display: table;
+    table-layout: fixed;
+    padding: 0;
+  }
+  .tabs li {
+    display: table-cell;
+    background: #f6f7f9;
+    border-top: 0.0625rem solid #ddd;
+    border-radius: 2rem 2rem 0 0;
+    border-right: 0.0625rem solid #ddd;
+    padding: 1.25rem;
+    border-bottom: 0.0625rem solid #222;
+    text-align: center;
+    font-family: var(--font1);
+    font-weight: 600;
+  }
+  
+  
+  
+  .tabs li.active {
+    background: var(--green);
+    border-top: 0.0625rem solid #222;
+    border-left: 0.0625rem solid #222;
+    border-right: 0.0625rem solid #222;
+    border-bottom: 0;
+  
+  }
+  
+  .tabs li.active a {
+    font-family: var(--font1);
+    color: black; /*눌렸을 때 폰트컬러*/
+    font-weight: 800;
+  
+  }
+  
+  .tabs li a {
+    font-size: 1rem;
+    color: #555554; /*눌리지 않았을 때 폰트컬러*/
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+  }
+  /*내용 정리*/
+  .review_box{
+      display: flex;
+      justify-content: space-around;
+      text-align: start;
+      overflow: hidden;
+  
+  }
+  
+  .section7_text{
+      margin-bottom: 1rem;
+  }
+  
+  .section7_text > div:first-child {
+      width: 6rem;
+      background-color: #90BBB5;
+      border-radius: 4rem;
+      text-align: center;
+      font-size: 0.8rem;
+      margin-bottom: 0.4rem;
+  }
+  .section7_text > div:nth-child(2){
+      margin-bottom: 0.8rem;
+      font-size: 0.8rem;
+      font-family: var(--font2);
+  }
+  .section7_text > div:nth-child(3){
+      width: 28rem;
+      height: 4rem;
+      font-size: 0.9rem;
+  }
+#section7  .whale{
+   position: absolute;
+   top: -16rem;
+   right: -16rem;
+   transform: rotate(20deg);
+   opacity: 0.6;
+   z-index: 5;
+} 
+/* 고래가 텍스트 밑으로가게 
+    탭버튼의 와이드값 조절..
+*/
+
+/* section8 시작*/
+#section8{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--pink2);
+    font-family: var(--font1);
+}
+#section8 .section8_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.water{
+    margin-bottom: 5rem;
+    /* position: absolute; */
+    width: 40vw;
+    /* top: 50%;
+    left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    z-index: 1;
+}
+.book8{
+    position: absolute;
+    max-width: 20vw;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.book8 > img{
+    width: 20vw;
+}
+
+.section8_text{ /* 텍스트랑 버튼이랑 묶여있음 */
+    margin-top: 2.8rem;
+    text-align: center;
+}
+
+.section8_text > .button8{
+    
+    border: 0.125rem solid salmon;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    background-color: var(--pink2);
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+.section8_text > .button8:hover{
+    background-color: var(--pink);
+    border: 0.125rem solid grey;
+    color: steelblue;
+}
+
+
+
+/* .section8_box > .button8{
+    width: 6rem;
+    height: 4rem;
+    background-color: var(--green);
+}  작동이 되지 않는다..*/
+
+/* section8 끝*/
+
+/* 섹션 3번째 글자 빠져나오는 현상 모든 텍스트 박스에다가 오버플로우 히든을 줘야하는가?
+    텍스트 색상 선정  
+    섹션 을 150vh로 사용가능한가? */
