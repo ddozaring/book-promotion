@@ -490,7 +490,7 @@ padding: 2rem 4rem;
 display: flex;
 justify-content: space-around;
 margin: 0 auto;
-background: url(../image/뒷바다\ 배경.png);
+background: url(./image/뒷바다\ 배경.png);
 background-size: cover;
 background-position: center center;
 border-radius: 4rem;
@@ -624,7 +624,7 @@ margin-bottom: 2rem;
     position: relative;
     width: 100vw;
     height: 100vh;
-    background-image: url(../image/watercolor-4117017_1920.png);
+    background-image: url(./image/watercolor-4117017_1920.png);
     background-color: var(--pink); 
     font-family: var(--font1);
 }
